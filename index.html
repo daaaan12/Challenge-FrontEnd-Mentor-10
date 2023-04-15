@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+
+
+</head>
+
+<body>
+  <main>
+    <div class="container-calc">
+      <div class="card-calc">
+
+        <div class="container-dados">
+          <div>
+            <label style="margin: 5px; font-size: 0.7rem; font-weight: 900; letter-spacing: 1.4px;">day</label>
+            <input class="input-dados" type="number" placeholder="DD">
+            <span class="error-message"></span>
+          </div>
+          <div>
+            <label style="margin: 5px; font-size: 0.7rem; font-weight: 900; letter-spacing: 1.4px;">month</label>
+            <input class="input-dados" type="number" placeholder="MM">
+            <span class="error-message"></span>
+          </div>
+          <div>
+            <label style="margin: 5px; font-size: 0.7rem; font-weight: 900; letter-spacing: 1.4px;">year</label>
+            <input class="input-dados" type="number" placeholder="YYYY">
+            <span class="error-message"></span>
+          </div>
+       
+          <button class="btn-calcular"><img src="./assets/images/icon-arrow.svg" alt="" width="50%"></button>
+        
+        </div>
+
+        <hr style="width: 85%; margin-top: 10px; ">
+
+        <div class="container-resultado">
+          <div id="resultado" class="txt-resultado"><span class="super-traco">- -</span>
+            <h2>years</h2>
+          </div>
+          <div id="resultado" class="txt-resultado"><span class="super-traco">- -</span>
+            <h2>months</h2>
+          </div>
+          <div id="resultado" class="txt-resultado"><span class="super-traco">- -</span>
+            <h2>days</h2>
+          </div>
+        </div>
+      </div>
+
+      <footer style="margin: 30px;">
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://github.com/daaaan12">Danilo Costa</a>.
+        </div>
+      </footer>
+    </div>
+
+  </main>
+
+
+
+
+</body>
+
+<script>
+
+
+</script>
+<script src="./assets/js/main.js" defer></script>
+
+</html>

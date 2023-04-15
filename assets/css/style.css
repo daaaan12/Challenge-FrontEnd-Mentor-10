@@ -1,0 +1,314 @@
+/* Reset */
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* End Reset */
+
+
+/* 
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (inputs): 32px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400i, 700, 800i
+
+
+
+*/
+
+:root {
+
+    --color-purple: hsl(259, 100%, 65%);
+    --color-light-red: hsl(0, 100%, 67%);
+    
+    --color-white: hsl(0, 0%, 100%);
+    --color-off-white: hsl(0, 0%, 94%);
+    --color-light-grey: hsl(0, 0%, 86%);
+    --color-smokey-grey:  hsl(0, 1%, 44%);
+    --color-off-black: hsl(0, 0%, 8%);
+
+    --font-poppins: 'Poppins', sans-serif;
+
+    --font-size-inputs: 16px;
+
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+
+/*  */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-off-white);
+    font-family: var(--font-poppins);
+
+}
+
+.container-calc {
+   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-calc {
+    
+    background-color: white;
+    width: 590px;
+    height: 470px;
+    border-radius: 20px 20px 150px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-dados {
+  
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  
+}
+
+.input-dados {
+    width: 95%;
+    padding: 9px;
+    font-weight: 900;
+    font-size: var(--font-size-inputs);
+    border: 1px solid var(--color-smokey-grey);
+}
+
+.error-message {
+    width: 40%;
+    color: red;
+    font-size: 0.75rem;
+    text-transform: lowercase;
+ 
+    
+}
+
+.input-dados:hover {
+    border: 1px solid rgb(224, 219, 219);
+    
+}
+
+
+.container-resultado {
+    width: 85%;
+    font-weight: 800;
+    
+
+}
+
+.txt-resultado {
+    display: flex;
+    font-size: 4.2rem;
+}
+
+.txt-resultado h2 {
+    padding-left: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.super-traco {
+    color: var(--color-purple);
+    font-size: 2.8rem;
+    margin-top: 20px;
+}
+
+.btn-calcular {
+    border-radius:  50%;
+    width: 140px;
+    height: 60px;
+    border: none;
+    position: relative;
+    top: 73px;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+}
+
+.btn-calcular:hover {
+    background-color: var(--color-off-black);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 600px) {
+    .card-calc {
+       
+        width: 90%;
+       
+    }
+
+
+    hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn-calcular {
+        position: relative;
+        left: -200px;
+        top: 78px;
+        height: 50px;
+    }
+
+    .container-resultado {
+        width: 60%;
+        margin-left: -100px;
+        
+    }
+
+    .input-dados {
+        width: 90%;
+        
+    }
+
+    .txt-resultado {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .txt-resultado {
+       
+        font-size: 2.8rem;
+    }
+
+    .btn-calcular {
+        height: 45px;
+        top: 93px;
+    }
+
+    .super-traco {
+        font-size: 1.9rem;
+    }
+
+    .btn-calcular {
+        left: -120px;
+        top: 73px;
+    }
+
+   
+}
